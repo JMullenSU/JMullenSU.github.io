@@ -27,12 +27,13 @@
             ></a-entity>
             -->
 
-            <!-- define your gltf asset -->
-            <a-assets>
-	           <a-asset-item id="dendrite" src="/path/BMesh_Dendrite_Assembly.gltf"></a-asset-item>
-            </a-assets>
-            <!-- use your gltf model -->
-            <a-entity gltf-model="#dendrite" scale="0.01 0.01 0.01"></a-entity>
+            <a-scene>
+                <a-assets>
+                  <a-asset-item id="dendrite" src="/path/to/BMesh_Dendrite_Assembly.gltf"></a-asset-item>
+                </a-assets>
+              
+                <a-entity gltf-model="#dendrite" scale="0.01 0.01 0.01"></a-entity>
+            </a-scene>
 
         </a-marker>
 
