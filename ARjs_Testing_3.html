@@ -8,10 +8,14 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-                                                                                                  
-            <a-marker type="pattern" url="https://jmullensu.github.io/Custom_Marker_Test_2.patt">
-                <a-box position='0 0.5 0' material='color: white;' soundhandler></a-box>
-            </a-marker>                                                                                      
+
+        <a-assets>
+            <a-asset-item id="dendrite" url="https://jmullensu.github.io/BMesh_Dendrite_Assembly.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-marker type="pattern" url="https://jmullensu.github.io/Custom_Marker_Test_2.patt">
+            <a-entity scale="0.2 0.2 0.2" gltf-model="#dendrite"></a-entity>
+        </a-marker>
         
             <!--
             <a-entity
@@ -50,6 +54,8 @@
             ></a-entity>
         </a-marker>
         -->
+
+        
 
         <a-entity camera></a-entity>
 
